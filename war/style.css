@@ -1,0 +1,262 @@
+@CHARSET "ISO-8859-1";
+body{
+	margin: 0;
+	padding:0;
+	background-color: #e3e6e5;
+	/* position: absolute; */
+}
+a{
+	color: white;
+	text-decoration: none;
+}
+a:HOVER{
+	text-decoration: underline;
+}
+#strat{
+	
+}
+/* #content{
+	margin: 30px -105px 30px 150px;
+	background-color: #e3e6e5;
+	border: 0px solid white;
+	border-radius: 5px;
+	background-position: center;
+	height: auto;
+	bottom: 0px;
+	position: relative;
+	 width: 100%; 
+	padding: 50px 50px 50px 50px;
+}
+#content */ 
+#header{
+	background-color: #636f7d;
+	/* background-position: top; */
+	/* border-radius: 5px; */
+	/* top: 0; */
+	height: 50px;
+	 width: 100%; 
+	color: #ffffff;
+	font-family: Verdana;
+	/* margin-right: 20px; */
+	font-size: 13px;
+	display: inline-block;
+}
+#header .usrname{
+	/* margin-top: 20px; */
+	padding: 20px; 
+	margin-right: 30px;
+	
+
+	}
+#usepto{
+	border: 1px solid white; 
+	border-radius:30%; 
+	cursor: pointer;
+	/* position: absolute; */
+	width: 30px; 
+	height: 30px;
+	 margin-top: 9px; 
+	margin-right: 10px; 
+    float: right;
+	clear: both;
+}
+#text{
+	height: 50px;
+	width: 400px;
+	padding: 15px 0px 0px 30px;
+	position: absolute;
+	clear: both;
+}
+#text input{
+	border: 1px solid lightgray;
+	border-radius: 5px;
+	height: 40px;
+	width: 350px;
+	font-size:15px;
+	padding: 7px;
+	background-color: #f0f2f2;
+}
+#image{
+	margin-left: 500px;
+	position: absolute;
+	display: block;
+}
+#image img{
+	margin-left: 400px;
+	height: 70px;
+	width: 530px;
+	position: absolute;
+}
+#container1{
+	border:1px solid lightgray;
+	border-radius: 5px;
+	margin: 40px 0 20px 70px;
+	background-color: #f0f2f1;
+	width: 250px;
+	height: auto;
+	display: inline-block;
+	position: relative;
+	/* padding: 5px 5px 5px 5px; */
+}
+/* #container2{
+	border:1px solid lightgray;
+	border-radius: 5px;
+	margin: 1px 0 0 340px;
+	background-color: #f0f2f1;
+	width: 250px;
+	height: auto;
+	position: absolute;
+	padding: 5px 5px 5px 5px;
+}
+#container3{
+	border:1px solid lightgray;
+	border-radius: 5px;
+	margin: 200px 0 0 640px;
+	background-color: #f0f2f1;
+	width: 250px;
+	height: auto;
+	position: absolute;
+	padding: 5px 5px 5px 5px;
+} */
+#container1 .header{
+	background-color: #82cfcf;
+	height: 20px;
+	padding:5px 0 5px 0;
+	font-family: calibri;
+}
+#container2 .header{
+	background-color: #ded67a;
+	height: 20px;
+	padding:5px 0 5px 0;
+	font-family: calibri;
+}
+#container3 .header{
+	background-color: #80cf88;
+	height: 20px;
+	padding:5px 0 5px 0;
+	font-family: calibri;
+}
+.footer img{
+	bottom: 0;
+	width: 100%;
+}
+.footer img:HOVER{
+	content: url("footover2.png");
+	bottom: 0;
+	width: 100%;
+	cursor: pointer;
+}
+/* #container2 .footer{
+	background-image: url("foot.png");
+	bottom: 0;
+}
+#container3 .footer{
+	background-image: url("foot.png");
+	bottom: 0;
+} */
+.inside_container{
+	margin: 10px 6px 10px 6px;
+	border: 1px solid lightgray;
+	border-radius: 5px;
+	background-color: #ffffff;
+	padding: 5px 5px 5px 5px;
+	font-family: Verdana;
+	font-size: 13px;
+	
+}
+#checkbox{
+	float: left;
+}
+#tt{
+	margin-left: 25px;
+}
+#e{
+	border: 0px solid black;
+	/* bottom: 50px;
+	padding-bottom: 50px; */
+	margin-top: 160px;
+	clear: both;
+	position: relative;
+} 
+#newfile{
+	border: 2px solid;
+	font-style:normal;
+	font-size: 20;
+	border-radius: 100%;
+	width: 30;
+	height: 30;
+	/* margin-top: 70px; */
+	position: absolute;
+}
+#newfile:HOVER{
+	background-color: #f0f2f2;
+	cursor: pointer;
+}
+#newfile .plus{
+	/* padding: 2px 0 0 10px; */
+	padding-left: 10px;
+	padding-top: 3px;
+}
+#nf{
+	    margin-top: 100px;
+    margin-right: 50px;
+    /* position: absolute; */
+    clear: left;
+    float: right;
+	
+}
+#fl{
+	margin-left: 40px;
+	margin-top: 2px;
+	font-family: Verdana;
+	font-size: 11px;
+}
+#fl:HOVER {
+	text-decoration: underline;
+	cursor: pointer;
+}
+#scroll {
+	height: 300px;
+	overflow: scroll;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+ul li{
+	padding: 3px;
+	float: right;
+	height: 20px;
+	width: auto;
+	background-color: #636f7d;
+}
+ul ul li a{
+	float: left;
+	color: #000;
+}
+li ul li a:HOVER{
+	color: #9fd8e1;
+	text-decoration: none;
+	
+}
+
+ul ul li{
+    border-radius: 5px;
+	background-color: #FFF;
+	color: #000;
+	width: 100px;
+	border-bottom: 1px solid lightgray;
+	display:none;
+	clear: both;
+	position: relative !important;
+	z-index:999999 !important;
+}
+ul li li{
+	background-color: #fff;
+	opacity: 0.9;
+	}
+select {
+	background-color: #636f7d;
+	border: 0;
+}
