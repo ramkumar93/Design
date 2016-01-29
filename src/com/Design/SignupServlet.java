@@ -15,11 +15,16 @@ import com.Design.PMF;
 
 @SuppressWarnings("serial")
 public class SignupServlet extends HttpServlet {
+	public void doGet(HttpServletRequest req, HttpServletResponse resp)
+			throws IOException {
+		this.doPost(req, resp);
+	}
+	
 	public void doPost(HttpServletRequest req, HttpServletResponse resp)
 			throws IOException {
 		/*resp.setContentType("text/plain");
 		resp.getWriter().println("Hello, world");*/
-		
+		System.out.println("In Signup Servlet");
 		String usrname = req.getParameter("name");
 		String usremail = req.getParameter("email");
 		String usrpwd = req.getParameter("pwd");
@@ -45,9 +50,9 @@ public class SignupServlet extends HttpServlet {
 			session.setAttribute("username", usrname);
 			session.setAttribute("emailid", usremail);
 			System.out.println("3");
-			//resp.sendRedirect("welcome.jsp");
+			resp.sendRedirect("/listnameretrive");
 			System.out.println("4");
-			req.getRequestDispatcher("/welcome.jsp").forward(req, resp);
+			//req.getRequestDispatcher("/listnameretrive").forward(req, resp);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

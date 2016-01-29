@@ -6,11 +6,12 @@
  }
 .calendar{
 	width: 130px;
-	height: 70px;
+	height: 80px;
 	background-color: #e3e6e5;
-	color: #FFFFFF;
+	color: gray;
 	/* border-radius: 5%; */
 	border-left: 1px solid lightgray;
+	border-right: 1px solid lightgray;
 	/* border-right: 1px solid gray; */
 	display: inline-block;
 	margin-left: -4px;
@@ -19,7 +20,7 @@
 
 #leftarrow{
 	width: 20px;
-	height: 70px;
+	height: 35px;
 	background-color: #e3e6e5;
 	color: lightgray;
 	/* border-radius: 5%; */
@@ -35,13 +36,14 @@
 	
 #rightarrow{
 	width: 20px;
-	height: 70px;
+	height: 35px;
 	background-color: #e3e6e5;
 	color: lightgray;
 	/* border-radius: 5%; */
 	font-size:26px;
 	display: inline-block;
-	border-left: 1px solid lightgray;
+	/* border-left: 1px solid lightgray; */
+	border-right: 1px solid lightgray;
 	margin-left: -4px;
 	
 }
@@ -77,7 +79,7 @@
 	font-family: verdana, Arial, sans-serif;
 	padding: 10px 0;
 	margin: 0;
-	color: gray;
+	/* color: gray; */
 	text-align: center;
 	
 }
@@ -85,29 +87,33 @@
 	color: #fff;
 
 	}
-#calendar-day{
-	background-color: #d45555;
-	color: #FFFFFF;
+.bga{
+	background-color: #d45555 ;
+	color: #fff;
 	font-size: 20px;
 	padding: 10px;
 	/* margin-top:5px; */
 	padding-bottom: 0;
-	height: 60px;
+	height: 80px;
 }
+/* #calendar-day{
+	
+	
+} */
 
 
-#calendar-day-1{
+.bg{
 	font-size: 20px;
 	padding: 10px;
 	/* margin-top:5px; */
 	padding-bottom: 0;
-	height: 70px;
+	/* height: 60px; */
 }
 
-#calendar-day-2{
+/* #calendar-day-2{
 	font-size: 20px;
 	padding: 10px;
-	/* margin-top:5px; */
+	margin-top:5px;
 	padding-bottom: 0;
 	height: 70px;
 }
@@ -115,7 +121,7 @@
 #calendar-day_1{
 	font-size: 20px;
 	padding: 10px;
-	/* margin-top:5px; */
+	margin-top:5px;
 	padding-bottom: 0;
 	height: 70px;
 }
@@ -123,11 +129,11 @@
 #calendar-day_2{
 	font-size: 20px;
 	padding: 10px;
-	/* margin-top:5px; */
+	margin-top:5px;
 	padding-bottom: 0;
 	height: 70px;
 }
-
+ */
 #calendar-month-year{
 	font-size: 12px;
 }
@@ -136,7 +142,7 @@
 	padding-bottom: 0;
 } 
 .clder{
-	margin-left: 150px;
+	margin-left: 140px;
 }
 
 

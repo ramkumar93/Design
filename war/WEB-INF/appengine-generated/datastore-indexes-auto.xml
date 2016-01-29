@@ -1,11 +1,18 @@
-<!-- Indices written at Mon, 4 Jan 2016 12:26:14 IST -->
+<!-- Indices written at Wed, 27 Jan 2016 10:37:36 IST -->
 
 <datastore-indexes>
 
-    <!-- Used 1 time in query history -->
+    <!-- Used 5 times in query history -->
     <datastore-index kind="Listname" ancestor="false" source="auto">
         <property name="email" direction="asc"/>
         <property name="name" direction="asc"/>
+    </datastore-index>
+
+    <!-- Used 18 times in query history -->
+    <datastore-index kind="Schedule" ancestor="false" source="auto">
+        <property name="date" direction="asc"/>
+        <property name="email" direction="asc"/>
+        <property name="listName" direction="asc"/>
     </datastore-index>
 
 </datastore-indexes>

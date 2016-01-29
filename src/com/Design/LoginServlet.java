@@ -5,6 +5,7 @@ import java.util.List;
 
 import javax.jdo.PersistenceManager;
 import javax.jdo.Query;
+import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -12,11 +13,17 @@ import javax.servlet.http.HttpSession;
 
 @SuppressWarnings("serial")
 public class LoginServlet extends HttpServlet {
+	public void doGet(HttpServletRequest req, HttpServletResponse resp)
+			throws IOException {
+		this.doPost(req, resp);
+	}
+	
 	public void doPost(HttpServletRequest req, HttpServletResponse resp)
 			throws IOException {
 		
 			HttpSession session = req.getSession();
 			PersistenceManager p = PMF.get().getPersistenceManager();
+			
 			
 			String uname = req.getParameter("username");
 			String passwd = req.getParameter("password");
@@ -41,8 +48,8 @@ public class LoginServlet extends HttpServlet {
 				    	session.setAttribute("username", name);
 				    	session.setAttribute("emailid", email);
 				    	System.out.println("above redirect");
-				    	//resp.sendRedirect("listname/retrive");
-				    	req.getRequestDispatcher("/listname/retrive").forward(req, resp);
+				    	resp.sendRedirect("/listnameretrive");
+				    	//req.getRequestDispatcher("/listnameretrive").forward(req, resp);
 				    	//System.out.println("below redirect");
 				    	}
 				    	/*else
@@ -54,7 +61,7 @@ public class LoginServlet extends HttpServlet {
 			  } else {
 			    // Handle "no results" case
 				  req.setAttribute("error", "Not a Valid User.");
-		    		req.getRequestDispatcher("login.jsp").include(req, resp);
+		    		req.getRequestDispatcher("/loginfirst").include(req, resp);
 				  System.out.println("Please Enter Valid Username and Password..");
 			  }
 		}catch(Exception e)
@@ -64,6 +71,6 @@ public class LoginServlet extends HttpServlet {
 			q.closeAll();
 			p.close();	 
 			}
-		
+			
 	}
 }

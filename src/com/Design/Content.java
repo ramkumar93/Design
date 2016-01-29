@@ -14,6 +14,28 @@ public class Content {
 	
 	@Persistent
 	String content;
+	
+	@Persistent
+	String date;
+	
+	@Persistent
+	String gmtdate;
+
+	public String getDate() {
+		return date;
+	}
+
+	public void setDate(String date) {
+		this.date = date;
+	}
+
+	public String getGmtdate() {
+		return gmtdate;
+	}
+
+	public void setGmtdate(String gmtdate) {
+		this.gmtdate = gmtdate;
+	}
 
 	public String getEmail() {
 		return email;
@@ -38,6 +60,15 @@ public class Content {
 	public void setContent(String content) {
 		this.content = content;
 	}
+
+	@Override
+	public String toString() {
+		return "Content [email=" + email + ", listname=" + listname
+				+ ", content=" + content + ", date=" + date + ", gmtdate="
+				+ gmtdate + "]";
+	}
+
+
 	
 	
 }

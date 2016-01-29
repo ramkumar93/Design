@@ -10,10 +10,11 @@ function calendar(){
 };
 function getYesterdaysDate() {
 	var day = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
-	var month = ['January','Febuary','March','April','May','June','July','August','September','October','November','December'];
+	var month = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
     var date = new Date();
     date.setDate(date.getDate());
     var date_1 = new Date();
+    console.log(date_1.getFullYear());
     date_1.setDate(date.getDate()-1);
     var date_2 = new Date(); 
     date_2.setDate(date.getDate()-2);
@@ -21,11 +22,11 @@ function getYesterdaysDate() {
     date1_1.setDate(date.getDate()+1);
     var date1_2 = new Date(); 
     date1_2.setDate(date.getDate()+2);
-    document.getElementById("calendar-day-2").innerHTML = day[date_2.getDay()] + '<br><span style="font-size:15px;">' + month[(date_2.getMonth())] + ' ' + date_2.getDate()+'</span>';
-    document.getElementById("calendar-day-1").innerHTML = day[date_1.getDay()] + '<br><span style="font-size:15px;">' + month[(date_1.getMonth())] + ' ' + date_1.getDate()+'</span>';
-    document.getElementById("calendar-day").innerHTML = day[date.getDay()] + '<br><span style="font-size:15px;">' + month[(date.getMonth())] + ' ' + date.getDate()+'</span>';
-    document.getElementById("calendar-day_2").innerHTML = day[date1_2.getDay()] + '<br><span style="font-size:15px;">' + month[(date1_2.getMonth())] + ' ' + date1_2.getDate()+'</span>';
-    document.getElementById("calendar-day_1").innerHTML = day[date1_1.getDay()] + '<br><span style="font-size:15px;">' + month[(date1_1.getMonth())] + ' ' + date1_1.getDate()+'</span>';
+    document.getElementById("calendar-day-2").innerHTML = '<span style="font-size:17px;">' + date_2.toDateString()+'</span>';
+    document.getElementById("calendar-day-1").innerHTML = '<span style="font-size:17px;">' + date_1.toDateString()+'</span>';
+    document.getElementById("calendar-day").innerHTML = '<span style="font-size:17px;">' + date.toDateString()+'</span>';
+    document.getElementById("calendar-day_2").innerHTML = '<span style="font-size:17px;">' + date1_2.toDateString()+'</span>';
+    document.getElementById("calendar-day_1").innerHTML = '<span style="font-size:17px;">' + date1_1.toDateString()+'</span>';
 }
 
 /*function setText(id, val){

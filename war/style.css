@@ -5,6 +5,9 @@ body{
 	background-color: #e3e6e5;
 	/* position: absolute; */
 }
+input{
+	autocomplete: off;
+}
 a{
 	color: white;
 	text-decoration: none;
@@ -69,7 +72,8 @@ a:HOVER{
 }
 #text input{
 	border: 1px solid lightgray;
-	border-radius: 5px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
 	height: 40px;
 	width: 350px;
 	font-size:15px;
@@ -120,7 +124,7 @@ a:HOVER{
 } */
 #container1 .header{
 	background-color: #82cfcf;
-	height: 20px;
+	/* height: 20px; */
 	padding:5px 0 5px 0;
 	font-family: calibri;
 }
@@ -137,11 +141,19 @@ a:HOVER{
 	font-family: calibri;
 }
 .footer img{
+	/* background-color: #a8b3bf;
+	text-align: center;
+	border: 0px;
+	color: gray;
+	font-size: 22px;
+	font-weight: 10px;
+	height: 30px; */
 	bottom: 0;
 	width: 100%;
 }
 .footer img:HOVER{
-	content: url("footover2.png");
+	/* background-color: #abd5eb; */
+	content : url("footover2.png");
 	bottom: 0;
 	width: 100%;
 	cursor: pointer;
@@ -162,7 +174,7 @@ a:HOVER{
 	padding: 5px 5px 5px 5px;
 	font-family: Verdana;
 	font-size: 13px;
-	
+	cursor: pointer;
 }
 #checkbox{
 	float: left;
@@ -194,8 +206,8 @@ a:HOVER{
 }
 #newfile .plus{
 	/* padding: 2px 0 0 10px; */
-	padding-left: 10px;
-	padding-top: 3px;
+	padding-left: 7px;
+	/* padding-top: 3px; */
 }
 #nf{
 	    margin-top: 100px;
@@ -227,7 +239,7 @@ ul{
 ul li{
 	padding: 3px;
 	float: right;
-	height: 20px;
+	height: 25px;
 	width: auto;
 	background-color: #636f7d;
 }
